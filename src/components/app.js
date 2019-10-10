@@ -3,6 +3,7 @@ import { Router } from 'preact-router';
 
 // Code-splitting is automated for routes
 import Home from '../routes/Home';
+import SRP from '../routes/SRP';
 
 export default class App extends Component {
 
@@ -15,7 +16,8 @@ export default class App extends Component {
 			<div id="app">
 				{/* <Header /> */}
 				<Router onChange={this.handleRoute}>
-					<Home path="/suggest" />
+					<Home path="/" />
+					<SRP path="/srp/" />
 				</Router>
 			</div>
 		);
