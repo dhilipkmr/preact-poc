@@ -1,5 +1,4 @@
 import { h, Component, fragment } from 'preact';
-import { Link } from 'preact-router';
 import AutoSuggestTrains from '../../components/AutoSuggestTrains';
 
 export default class Home extends Component {
@@ -46,7 +45,6 @@ export default class Home extends Component {
 							null
 					}
 				</div>
-				<Link href="/srp">Go to SRP</Link>
 			</fragment>
 		);
 	}
